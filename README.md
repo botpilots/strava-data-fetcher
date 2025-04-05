@@ -10,7 +10,7 @@ It then commits the fetched activity data directly into the repository as `data/
 
 It also maintains a log (`data/fetch_log.txt`) and checksum file (`data/last_checksum.txt`).
 
-### Setup
+## Setup
 
 To enable this workflow, you need to add the following secrets in its GitHub repository settings:
 
@@ -56,7 +56,7 @@ If the workflow starts failing with authorization errors, you may need to repeat
 
 Once the secrets are configured correctly, the workflow will run automatically on its schedule or can be triggered manually.
 
-### Local Development and Testing (Workflow Simulation)
+## Local Development and Testing (Workflow Simulation)
 
 You can test the `fetch_strava_data.yml` workflow locally before committing changes using a tool like [`act`](https://github.com/nektos/act). This simulates how the workflow would run on GitHub Actions runners using Docker.
 
